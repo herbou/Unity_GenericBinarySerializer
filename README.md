@@ -46,7 +46,9 @@ public class Player : MonoBehaviour
 }
 ```
 
-BinarySerializer has 3 accessible static methods.
+# BinarySerializer has 3 accessible static methods :
+
+
 
 # Save Data
 - public static void Save <T> (T data, string filename)
@@ -55,12 +57,11 @@ Saves any data with a given type T in a file (filename).
 ```c#
 BinarySerializer.Save (dataHolder, "filename");
 ```
-⚠Note! : You will find saved data "filename" in your app's persistent data path.
-add :
+⚠Note! : You will find saved data "filename" in your app's persistent data path :
 ```c#
+//Add this line in the Start if you want to see where data is saved in your machine.
 Debug.Log(Application.persistentDataPath+"/GameData/");
 ```
-if you want to see where data is saved in your machine.
 
 
 # Load Data
