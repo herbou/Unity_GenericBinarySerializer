@@ -74,7 +74,7 @@ Debug.Log(Application.persistentDataPath+"/GameData/");
 	
 Loads data from a saved file (filename).
 ```c#
-dataHolder = BinarySerializer.Load ("filename");
+dataHolder = BinarySerializer.Load<DataHolderType> ("filename");
 ```
 ⚠Note! : The Load method already has a check for file existance, that's why you need to add default values to your Data Holder class fields, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before.
 
