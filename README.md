@@ -55,7 +55,7 @@ Saves any data with a given type T in a file (filename).
 ```c#
 BinarySerializer.Save (dataHolder, "filename");
 ```
-Note! : You will find saved data "filename" in your app's persistent data path.
+⚠Note! : You will find saved data "filename" in your app's persistent data path.
 add :
 ```c#
 Debug.Log(Application.persistentDataPath+"/GameData/");
@@ -70,7 +70,7 @@ Loads data from a saved file (filename).
 ```c#
 dataHolder = BinarySerializer.Load ("filename");
 ```
-Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
+⚠Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
 
 # Check if data is already saved
 - public static bool HasSaved (string filename)
