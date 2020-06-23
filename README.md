@@ -1,6 +1,6 @@
 # Unity_GenericBinarySerializer
 
-Consider this Player.cs class
+Player.cs file
 ```c#
 [System.Serializable]
 public class PlayerData
