@@ -1,5 +1,6 @@
 # Unity Generic Binary Serializer
 Click on the image to watch the video tutorial :
+
 [![Tutorial](https://img.youtube.com/vi/PbPCW8vK3RQ/0.jpg)](https://www.youtube.com/watch?v=PbPCW8vK3RQ)
 
 📄 Player.cs file
