@@ -1,4 +1,5 @@
 # Unity Generic Binary Serializer
+Generic BinarySerializer is a great and easy to use tool that helps you to save/load and secure your game data easily,
 Click on the image to watch the video tutorial :
 
 [![Tutorial](https://img.youtube.com/vi/PbPCW8vK3RQ/0.jpg)](https://www.youtube.com/watch?v=PbPCW8vK3RQ)
