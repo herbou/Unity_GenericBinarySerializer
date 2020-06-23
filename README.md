@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 		//Change Data.
 		playerDataInstance.score++;
 		playerDataInstance.color = Color.Red;
-		playerDataInstance.pos += Vector2.Up+0.5f;
+		playerDataInstance.pos += Vector2.Up*0.5f;
 
 		Debug.Log(playerDataInstance.score);
 
