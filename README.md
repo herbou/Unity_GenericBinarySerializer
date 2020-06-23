@@ -92,9 +92,10 @@ all variables that's not part of the Unity engine is allowed :
 - int, float, bool, string,
 
 Concerning UnityEngine types you can use only these 5:
-
 - Vector2, Vector3, Vector4, Color, and Quaternion
-- You can also save Arrays, Lists, .... of thoes allowed types.
+
+You can also save :
+-Arrays, Lists, .... of thoes allowed types.
 
 # Unallowed types :
 Except the 5 types mentioned above (Vector2, Vector3, Vector4, Color, and Quaternion),, all variables of UnityEngine are not allowed :
