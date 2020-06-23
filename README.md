@@ -1,4 +1,4 @@
-# Unity_GenericBinarySerializer
+# Unity Generic Binary Serializer
 
 Player.cs file
 ```c#
@@ -48,7 +48,8 @@ public class Player : MonoBehaviour
 
 BinarySerializer has 3 accessible static methods.
 
-#public static void Save <T> (T data, string filename)
+# Save Data
+public static void Save <T> (T data, string filename)
 Saves any data with a given type T in a file (filename).
 ```c#
 BinarySerializer.Save (dataHolder, "filename");
@@ -61,15 +62,16 @@ Debug.Log(Application.persistentDataPath+"/GameData/");
 if you want to see where data is saved in your machine.
 
 
-#public static T Load<T> (string filename)
+# Load Data
+public static T Load<T> (string filename)
 Loads data from a saved file (filename).
 ```c#
 dataHolder = BinarySerializer.Load ("filename");
-
-Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
 ```
+Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
 
-#public static bool HasSaved (string filename)
+# Check if data is already saved
+public static bool HasSaved (string filename)
 Check if there is saved data for a given filename.
 ```c#
 if (BinarySerializer.HasSaved("filename")){
