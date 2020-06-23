@@ -2,6 +2,7 @@
 
 📄 Player.cs file
 ```c#
+//Your data holder class
 [System.Serializable]
 public class PlayerData
 {
@@ -71,7 +72,7 @@ Loads data from a saved file (filename).
 ```c#
 dataHolder = BinarySerializer.Load ("filename");
 ```
-⚠Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
+⚠Note! : The Load method already has a check for file existance, that's why you need to add default values to your Data Holder class fields, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before.
 
 # ☴ Check if data is already saved
 - public static bool HasSaved (string filename)
@@ -82,3 +83,17 @@ if (BinarySerializer.HasSaved("filename")){
 	//do something.
 }
 ```
+#
+#
+⚠⚠Note : 
+Not all data types are allowed inside Data holder class.
+# Allowed types :
+all variables that's not part of the Unity engine is allowed :
+- int, float, bool, string, 
+Concerning UnityEngine types you can use only these 5:
+- Vector2, Vector3, Vector4, Color, and Quaternion
+- You can also save Arrays, Lists, .... of thoes allowed types.
+
+# Unallowed types :
+Except the 5 types mentioned above (Vector2, Vector3, Vector4, Color, and Quaternion),, all variables of UnityEngine are not allowed :
+Transform, Gameobject, SpriteRenderer, BoxCollider, Mesh, .....
