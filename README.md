@@ -83,7 +83,9 @@ if (BinarySerializer.HasSaved("filename")){
 	//do something.
 }
 ```
+
 #
+
 #
 ⚠⚠Note : 
 Not all data types are allowed inside Data holder class.
@@ -91,7 +93,7 @@ Not all data types are allowed inside Data holder class.
 all variables that's not part of the Unity engine is allowed :
 - int, float, bool, string, char, ....
 
-Concerning UnityEngine types you can use only these 5:
+Concerning UnityEngine types you can only use :
 - Vector2, Vector3, Vector4, Color, and Quaternion
 
 You can also save :
