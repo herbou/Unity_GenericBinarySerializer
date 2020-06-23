@@ -89,8 +89,10 @@ if (BinarySerializer.HasSaved("filename")){
 Not all data types are allowed inside Data holder class.
 # Allowed types :
 all variables that's not part of the Unity engine is allowed :
-- int, float, bool, string, 
+- int, float, bool, string,
+
 Concerning UnityEngine types you can use only these 5:
+
 - Vector2, Vector3, Vector4, Color, and Quaternion
 - You can also save Arrays, Lists, .... of thoes allowed types.
 
