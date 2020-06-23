@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
 
 
 
-# Save Data
+# ☴ Save Data
 - public static void Save <T> (T data, string filename)
 	
 Saves any data with a given type T in a file (filename).
@@ -64,7 +64,7 @@ Debug.Log(Application.persistentDataPath+"/GameData/");
 ```
 
 
-# Load Data
+# ☴ Load Data
 - public static T Load<T> (string filename)
 	
 Loads data from a saved file (filename).
@@ -73,7 +73,7 @@ dataHolder = BinarySerializer.Load ("filename");
 ```
 ⚠Note! : The Load method already has a check for file existance, that's why you need to add default values to your DataHolder class, because the BinarySerializer's Load method returns a new instance of the Data if it's not saved before (first Load).
 
-# Check if data is already saved
+# ☴ Check if data is already saved
 - public static bool HasSaved (string filename)
 
 Check if there is saved data for a given filename.
