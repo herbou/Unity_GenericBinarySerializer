@@ -64,7 +64,8 @@ BinarySerializer.Save (dataHolder, "filename");
 ```
 ⚠Note! : You will find saved data "filename" in your app's persistent data path :
 ```c#
-//Add this line in the Start if you want to see where data is saved in your machine.
+//Add this line in the Start if you want
+//to see where data is saved in your machine.
 Debug.Log(Application.persistentDataPath+"/GameData/");
 ```
 
