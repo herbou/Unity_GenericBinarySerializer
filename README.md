@@ -4,7 +4,7 @@ Click on the image to watch the video tutorial :
 
 [![Tutorial](https://img.youtube.com/vi/PbPCW8vK3RQ/0.jpg)](https://www.youtube.com/watch?v=PbPCW8vK3RQ)
 
-📄 Player.cs file
+📄 PlayerData.cs
 ```c#
 //Your data holder class
 [System.Serializable]
@@ -23,8 +23,10 @@ public class PlayerData
 	//public List<int> listOfItems = new List<int>();
 	//...
 }
+```
 
-
+📄 Player.cs
+```c#
 //Your Player class (MonoBehavior)
 public class Player : MonoBehaviour
 {
