@@ -47,7 +47,7 @@ public class BinarySerializer
 	}
 
 	/// <summary>
-	/// Save data to disk.
+	/// Load data from disk.
 	/// </summary>
 	/// <param name="filename">the file where you saved data.</param>
 	/// <returns></returns>
