@@ -8,7 +8,7 @@ Click on the image to watch the video tutorial :
 1. Add ```GenericBinarySerializer``` package to your project.
 2. Create a class (or struct) to hold your data and mark it as ```Serializable```:
 
-📄 ```PlayerData.cs```
+```📄 PlayerData.cs```
 ```c#
 [System.Serializable]
 public class PlayerData
@@ -29,7 +29,7 @@ public class PlayerData
 obj = BinarySerializer.Load<T> ("filename");
 ```
 Example :
-📄 ```Player.cs```
+```📄 Player.cs```
 ```c#
 public class Player : MonoBehaviour
 {
@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
 BinarySerializer.Save (obj, "filename");
 ```
 Example :
-📄 ```Player.cs```
+```📄 Player.cs```
 ```c#
 public class Player : MonoBehaviour
 {
