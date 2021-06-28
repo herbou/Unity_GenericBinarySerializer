@@ -4,6 +4,8 @@ Click on the image to watch the video tutorial :
 
 [![Tutorial](https://img.youtube.com/vi/PbPCW8vK3RQ/0.jpg)](https://www.youtube.com/watch?v=PbPCW8vK3RQ)
 
+<br>
+
 # ☴ How to use ?
 1. Add ```GenericBinarySerializer``` package to your project.
 2. Create a class (or struct) to hold your data and mark it as ```Serializable```:
@@ -23,6 +25,8 @@ public class PlayerData
 	public Quaternion rot = Quaternion.identity;
 }
 ```
+<br>
+
 # ☴ Methods and properties :
 ## Load data : 
 ```c#
@@ -48,6 +52,8 @@ public class Player : MonoBehaviour
 	}
 }
 ```
+<br>
+
 ## Save data : 
 ```c#
 BinarySerializer.Save (obj, "filename");
@@ -72,6 +78,8 @@ public class Player : MonoBehaviour
 	}
 }
 ```
+<br>
+
 ## Check if data is already saved : 
 ```c#
 BinarySerializer.HasSaved ("filename");
@@ -82,21 +90,26 @@ if (BinarySerializer.HasSaved("player.txt")){
 	//do something.
 }
 ```
+<br>
 
 ## Delete saved file : 
 ```c#
 BinarySerializer.DeleteDataFile ("filename");
 ```
+<br>
+
 ## Delete all saved files : 
 ```c#
 BinarySerializer.DeleteAllDataFiles ( );
 ```
+<br>
+
 ## Get the path where data is saved. : 
 ```c#
 BinarySerializer.GetDataPath ( );
 ```
 
-
+<br>
 
 ⚠Notes! : 
 
