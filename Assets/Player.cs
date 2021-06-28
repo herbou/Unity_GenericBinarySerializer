@@ -34,7 +34,7 @@ public class Player : MonoBehaviour {
       if (Input.GetMouseButtonUp (0))
          UpdatePlayer () ; 
 
-      // delete saved on "X" is pressed
+      // delete saved data "playerdata" when X key is pressed
       if (Input.GetKeyUp (KeyCode.X))
          BinarySerializer.DeleteDataFile ("playerdata") ;
    }
