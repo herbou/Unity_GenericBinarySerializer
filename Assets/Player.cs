@@ -43,7 +43,7 @@ public class Player : MonoBehaviour {
    void UpdatePlayer () {
       playerNickNameUIText.text = playerData.nickName ; //Update player nickname in UI.
       playerSprite.color = playerData.color ; //Update player color.
-      transform.rotation = playerData.rot ; //Update player position.
+      transform.position = playerData.pos ; //Update player position.
       transform.rotation = playerData.rot ; //Update player rotation.
    }
 
