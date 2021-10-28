@@ -21,7 +21,8 @@ public class Player : MonoBehaviour {
 
    void Start () {
       //Load data (if it's already saved)
-      playerData = BinarySerializer.Load<PlayerData> ("playerdata") ;
+      if (BinarySerializer.HasSaved("playerdata")
+         playerData = BinarySerializer.Load<PlayerData> ("playerdata") ;
 
       Debug.Log (BinarySerializer.GetDataPath ()) ;
 
